@@ -1,61 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto&display=swap');
 
 body, html{
     padding: 0px;
     margin: 0px;
     height: 100%;
+    background-image: url(landscape-4773879_1920.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-
-header{
-    height: 10vh;
-    width: 100%;
-    background-color: brown;
-}
 main{
     height:90%;
     width: 100%;
 }
 
-.menu{
-    width: 30%;
-    height: 100%;
-    background-color: rgb(199, 169, 169);
-    float: left;
-   
+/* ------------------------- Class from header block ------------------------ */
+
+.header{
+    height: 10%;
+    width: 100%;
+    background-color: rgba(0, 160, 240, .4);
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
-.list{
+.header__title{
+    margin: 0px;
+    text-align: center;
+}
+
+.header__navbar{
+    height: 5%;
+    width: 100%;
+}
+
+.header__navbarLeftItem{
+    float: left;
+    margin-left: 20px;
+}
+
+.header__navbarRightItem{
+    float: right;
+    margin-right: 20px;
+}
+
+.header__svgIcon{
+    height: 20px;
+    width: 20px;
+    filter: invert(100%) sepia(10%) saturate(378%) hue-rotate(221deg) brightness(115%) contrast(100%);
+}
+
+/* ------------------------- Class from order block ------------------------- */
+
+.order{
+    width: 20%;
+    margin-right: 20px;
+    text-align: right;
+    display: block;
+    float: right; 
+}
+
+.order__text{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -------------------------- Class from silderbar block --------------------- */
+
+.silderbar{
+    width: 30%;
+    height: 100%;
+    float: left;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.silderbar__item{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.silderbar__itemTitile{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: 750;
+    margin: 0em;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.silderbar__diver{
+    width: 80%;
+    height: 1px;
+    border: solid 1px gray ;
+    background-color: gray;
+    margin: auto;
+}
+
+.silderbar__row{
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.silderbar__list{
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: whitesmoke;
+}
+
+.silderbar__link{
+    color:rgb(0, 160, 240)
+}
+
+
+/* ----------------------- Class from list to do block ---------------------- */
+
+.listToDo{
     width: 70%;
     height: 100%;
-    background-color: rgb(125, 125, 163);
     float: right;
     
 }
 
-.list form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
-}
-
-.list p{
-    margin: 10px;
-}
-
-.item{
-    margin: auto;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: burlywood;
+.listToDo__item{
+    margin: auto; /* Center horizontal the item in the list*/
+    margin-top: 10px; /* Add space between item*/
+    padding: 10px; /*Add space between the text and checkbox and border of the item*/
+    background-color: rgba(68, 68, 68, 0.7);
     width: 90%;
-    
+    font-family: 'Roboto', sans-serif;
 }
 
-.item__ckeckbox{}
 
-.item__text{
+.listToDo__item--lessImportant{
+    background-color: rgba(124, 187, 0, .7);
+}
+
+.listToDo__item--important{
+    background-color: rgba(255, 187, 0, .7);
+}
+
+.listToDo__item--veryImportant{
+    background-color: rgba(246, 83, 20, .7);
+}
+
+.listToDo__item--made{
+    opacity: .58;
+}
+
+.listToDo__itemText{
     padding-left: 10px;
     font-size: 1.2rem;
-    
+}
+
+.listToDo__itemText--made{
+    text-decoration: line-through;
+
+}
+
+.listTodo__itemText--contacto{
+    color: rgb(0, 160, 240);
+    font-family: 'Roboto', sans-serif;
+}
+
+.listToDo__itemText--date{
+    color:rgb(68, 68, 68);
+    font-family: 'Roboto', sans-serif;
 }

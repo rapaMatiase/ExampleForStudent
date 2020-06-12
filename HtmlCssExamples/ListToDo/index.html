@@ -1,38 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!--  Any element inside the head of the page, there are not visible for the user in the viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        
+    <header class="header">
+        <h1 class="header__title"> List to do</h1>
+        <nav class="header__navbar">
+            <div class="header__navbarLeftItem">
+                <img class="header__svgIcon" src="open-menu.svg" alt="Icon sidebar">
+                
+            </div>
+            <div class="header__navbarRightItem">
+                <label class="order__text">Order by :</label>
+                <select>
+                    <option value="date"> Date </option>
+                    <option value="priotity"> Priority </option>
+                </select>
+            </div>
+        </nav>
     </header>
     <main>
-        <div class="menu">
-            <div>
-                Add task
-                <input />
+        <div class="silderbar">
+
+            <div class="silderbar__item">
+                <p class="silderbar__itemTitile">Add task</p>
+                <input placeholder="Write something..." class="silderbar__row" />
+                <select class="silderbar__row">
+                    <option> unpropity </option>
+                    <option> less important </option>
+                    <option> important</option>
+                    <option> very important </option>
+                </select>
+                <input class="silderbar__row" type="button" value="Add" />
             </div>
+
+            <div class="silderbar__diver"></div>
+
+            <div class="silderbar__item">
+                <p class="silderbar__itemTitile"> Dificultad about this layout : </p>
+                <span>easy</span> / middle / advanced
+            </div>
+
+            <div class="silderbar__diver"></div>
+
+            <div class="silderbar__item">
+                <p class="silderbar__itemTitile">About this page</p>
+                <ul class="silderbar__list">
+                    <li> No responsive design</li>
+                    <li> No javascript funtionality</li>
+                    <li> No CSS and JS animations</li>
+
+                </ul>
+
+            </div>
+
+          
+
+            <div class="silderbar__diver"></div>
+
+            <div class="silderbar__item">
+                <p class="silderbar__itemTitile"> Resourse</p>
+                <ul class="silderbar__list">
+                    <li>
+                        Color palette (<a class="silderbar__link" href="http://brandcolors.net/c/microsoft,microsoft">Brand color</a>)
+                    </li>
+                    <li>
+                        Font family (<a class="silderbar__link" href=""> Google fonts </a>)
+                    </li>
+                    <li>
+                        Free image (<a class="silderbar__link" href="https://pixabay.com/es/photos/paisaje-monta%C3%B1oso-pasto-ovejas-4773879/"> Pixabay</a>)
+                    </li>
+                    <li>
+                        Icons made by <a class="silderbar__link" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a class="silderbar__link" href="https://www.flaticon.com/" title="Flaticon"> flaticon</a> 
+                    </li>
+
+                </ul>
+            </div>
+
+        
         </div>
-        <div class="list">
-                <div class="item">
-                    <input class="" type="checkbox" /> 
-                    <label class="item__text">
-                        Hacer la taerea 
-                        <span> @Camila</span>
-                    </label>
-                </div>
-                <div class="item">
-                    <input class="" type="checkbox" /> 
-                    <label class="item__text">
-                        Realizar compras supermercado; zanahoria, tomate, lechuga, gaseosa, galletitas, pan negro, atun, papel higenico, y papel de cocina. Desodorante, jabon, perfume y algun acondicionador.
-                    </label>
-                </div>
-                
+        
+        <div class="listToDo">
+            <div class="listToDo__item listToDo__item--veryImportant">
+                <input type="checkbox" />
+                <label class="listToDo__itemText "> Interview in Microsoft </label>
+                <label class="listToDo__itemText--date"> (Monday 14/08/20 10AM)</label>
+            </div>
+            <div class="listToDo__item listToDo__item--important">
+                <input type="checkbox" />
+                <label class="listToDo__itemText "> Appointment with the doctor </label>
+                <label class="listToDo__itemText--date"> (Monday 20/09/20 14:30PM)</label>
+            </div>
+            <div class="listToDo__item listToDo__item--lessImportant">
+                <input type="checkbox" />
+                <label class="listToDo__itemText ">
+                    Sumermarket list; carriot, tomato, lechuga, gaseosa, galletitas, pan negro, atun,
+                    papel higenico, y papel de cocina. Desodorante, jabon, perfume y algun acondicionador.
+                </label>
+            </div>
+            <div class="listToDo__item listToDo__item--veryImportant">
+                <input type="checkbox" />
+                <label class="listToDo__itemText "> Paid the penalty fee  </label>
+            </div>
+            <div class="listToDo__item listToDo__item--important">
+                <input type="checkbox" />
+                <label class="listToDo__itemText "> Wash white shirt for next week. I have an interview to be a programmer. </label>
+            </div>
+            <div class="listToDo__item">
+                <input class="" type="checkbox" />
+                <label class="listToDo__itemText">
+                    <label class="listToDo__itemText "> Call </label>
+                    <span class="listTodo__itemText--contacto">@Camila</span>
+                </label>
+            </div>
+            <div class="listToDo__item listToDo__item--lessImportant listToDo__item--made">
+                <input type="checkbox" checked />
+                <label class="listToDo__itemText listToDo__itemText--made">
+                    Something done
+                </label>
+            </div>
+
         </div>
     </main>
 </body>
+
 </html>
