@@ -2,18 +2,20 @@
 <html lang="en">
 
 <head>
-    <!--  Any element inside the head of the page, there are not visible for the user in the viewport -->
+    <!--  Any element inside the head of the page, there are not visible for the user in the viewport. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ! Don't fotget import the css style sheet-->
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title> ListTo For Begginers</title>
 </head>
 <body>
+    <!--  Any element inside the body of the page, there are visible for the user in the viewport. -->
     <header class="header">
         <h1 class="header__title"> List to do</h1>
         <nav class="header__navbar">
             <div class="header__navbarLeftItem">
-                <img class="header__svgIcon" src="open-menu.svg" alt="Icon sidebar">
+                <img class="header__svgIcon" src="Images/open-menu.svg" alt="Icon sidebar">
                 
             </div>
             <div class="header__navbarRightItem">
@@ -25,45 +27,51 @@
             </div>
         </nav>
     </header>
+
     <main>
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                             THE SILDER BAR                              -->
+        <!-- ----------------------------------------------------------------------- -->
+
         <div class="silderbar">
 
+            <!-- ------------------------------- ITEM 1 -------------------------------- -->
             <div class="silderbar__item">
                 <p class="silderbar__itemTitile">Add task</p>
                 <input placeholder="Write something..." class="silderbar__row" />
                 <select class="silderbar__row">
-                    <option> unpropity </option>
-                    <option> less important </option>
-                    <option> important</option>
-                    <option> very important </option>
+                    <option value="unPropity"> unpropity </option>
+                    <option value="lessImportant"> less important </option>
+                    <option value="important"> important</option>
+                    <option value="veryImportant"> very important </option>
                 </select>
                 <input class="silderbar__row" type="button" value="Add" />
             </div>
 
             <div class="silderbar__diver"></div>
 
+            <!-- ------------------------------- ITEM 2 -------------------------------- -->
             <div class="silderbar__item">
                 <p class="silderbar__itemTitile"> Dificultad about this layout : </p>
-                <span>easy</span> / middle / advanced
+                <span>easy</span> / <span>middle</span>  / <span>advanced</span> 
             </div>
 
             <div class="silderbar__diver"></div>
-
+            
+            <!-- ------------------------------- ITEM 3 -------------------------------- -->
             <div class="silderbar__item">
                 <p class="silderbar__itemTitile">About this page</p>
                 <ul class="silderbar__list">
                     <li> No responsive design</li>
                     <li> No javascript funtionality</li>
                     <li> No CSS and JS animations</li>
-
                 </ul>
-
             </div>
-
-          
 
             <div class="silderbar__diver"></div>
 
+            <!-- ------------------------------- ITEM 4 -------------------------------- -->
             <div class="silderbar__item">
                 <p class="silderbar__itemTitile"> Resourse</p>
                 <ul class="silderbar__list">
@@ -79,39 +87,51 @@
                     <li>
                         Icons made by <a class="silderbar__link" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a class="silderbar__link" href="https://www.flaticon.com/" title="Flaticon"> flaticon</a> 
                     </li>
-
                 </ul>
             </div>
 
-        
         </div>
-        
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                        START THE LIST TO DO TASK                        -->
+        <!-- ----------------------------------------------------------------------- -->
+
         <div class="listToDo">
+            <!-- ------------------------------- ITEM 1 -------------------------------- -->
             <div class="listToDo__item listToDo__item--veryImportant">
                 <input type="checkbox" />
                 <label class="listToDo__itemText "> Interview in Microsoft </label>
                 <label class="listToDo__itemText--date"> (Monday 14/08/20 10AM)</label>
             </div>
+            <!-- ------------------------------- ITEM 2 -------------------------------- -->
             <div class="listToDo__item listToDo__item--important">
                 <input type="checkbox" />
                 <label class="listToDo__itemText "> Appointment with the doctor </label>
                 <label class="listToDo__itemText--date"> (Monday 20/09/20 14:30PM)</label>
             </div>
+            <!-- ------------------------------- ITEM 3 -------------------------------- -->
             <div class="listToDo__item listToDo__item--lessImportant">
                 <input type="checkbox" />
                 <label class="listToDo__itemText ">
-                    Sumermarket list; carriot, tomato, lechuga, gaseosa, galletitas, pan negro, atun,
-                    papel higenico, y papel de cocina. Desodorante, jabon, perfume y algun acondicionador.
+                    Sumermarket list; carriot, tomato, lettuce, soda, cookies, black bread, tuna, hygienic paper, and kitchen paper. Deodorant, soap, perfume and shampoo.
                 </label>
             </div>
+            <!-- ------------------------------- ITEM 4 -------------------------------- -->
             <div class="listToDo__item listToDo__item--veryImportant">
                 <input type="checkbox" />
                 <label class="listToDo__itemText "> Paid the penalty fee  </label>
             </div>
+            <!-- ------------------------------- ITEM 5 -------------------------------- -->
+            <div class="listToDo__item ">
+                <input type="checkbox" />
+                <label class="listToDo__itemText "> Can you see the joke in the page? </label>
+            </div>
+            <!-- ------------------------------- ITEM 6 -------------------------------- -->
             <div class="listToDo__item listToDo__item--important">
                 <input type="checkbox" />
                 <label class="listToDo__itemText "> Wash white shirt for next week. I have an interview to be a programmer. </label>
             </div>
+            <!-- ------------------------------- ITEM 7 -------------------------------- -->
             <div class="listToDo__item">
                 <input class="" type="checkbox" />
                 <label class="listToDo__itemText">
@@ -119,13 +139,13 @@
                     <span class="listTodo__itemText--contacto">@Camila</span>
                 </label>
             </div>
+            <!-- ------------------------------- ITEM 8 -------------------------------- -->
             <div class="listToDo__item listToDo__item--lessImportant listToDo__item--made">
                 <input type="checkbox" checked />
                 <label class="listToDo__itemText listToDo__itemText--made">
                     Something done
                 </label>
             </div>
-
         </div>
     </main>
 </body>

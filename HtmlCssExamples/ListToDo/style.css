@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto&display=swap');
 
+/* -------------------------- Normalice some styles to chrome ----------------- */
+
 body, html{
-    padding: 0px;
-    margin: 0px;
-    height: 100%;
-    background-image: url(landscape-4773879_1920.jpg);
-    background-attachment: fixed;
-    background-size: cover;
+    padding: 0px; /* I erased the paddind default */
+    margin: 0px; /* I erased the margin default */
+    height: 100%; 
+    background-image: url('Images/landscape-4773879_1920.jpg');
+    background-attachment: fixed; 
+    background-size: cover; 
 }
 
 main{
@@ -101,8 +103,8 @@ main{
 }
 
 .silderbar__row{
-    margin: auto;
-    margin-top: 5px;
+    margin: auto; /* Center horizontal the item in the list*/
+    margin-top: 5px; 
     margin-bottom: 5px;
 }
 
@@ -123,7 +125,6 @@ main{
     width: 70%;
     height: 100%;
     float: right;
-    
 }
 
 .listToDo__item{
