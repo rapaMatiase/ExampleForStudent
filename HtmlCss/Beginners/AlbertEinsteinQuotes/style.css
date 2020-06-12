@@ -1,0 +1,57 @@
+html, body{
+    margin: 0em;
+    height: 100%;
+    width: 100%;
+}
+
+.quote{
+    height: 100%;
+    width: 100%;
+    background-image: url("Images/albert-einstein-1165218_1920.jpg");
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.quote__squard{
+    float: right;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,0.8631827731092436) 0%, rgba(0,0,2,0.9248074229691877) 9%, rgba(0,0,3,0.9108018207282913) 18%, rgba(0,0,9,1) 40%);
+}
+
+.quote__section{
+    padding-right: 100px;
+}
+
+.quote__title{
+    font-size: 5rem;
+    color: snow;
+    text-align: right;
+    font-style: italic;
+}
+
+.quote__author{
+    font-size: 2rem;
+    color: snow;
+    text-align: right;
+}
+
+.resourse{
+    padding: 10px;
+    margin-left: 20px;
+    color: rgb(146, 146, 146);
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid  rgb(146, 146, 146);
+    width: 40%;
+}
+
+.resourse__title{
+    margin-top: 0em;
+    font-size: 1.5rem;
+}
+
+.resourse__link{
+    color: rgb(69, 150, 216);
+}
