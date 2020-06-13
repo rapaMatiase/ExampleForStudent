@@ -4,13 +4,15 @@ html, body{
     width: 100%;
 }
 
+/* ------------------------- CLASS FROM QUOTE BLOCK ------------------------- */
+
 .quote{
     height: 100%;
     width: 100%;
     background-image: url("Images/albert-einstein-1165218_1920.jpg");
     background-size: 80% 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; 
 }
 
 .quote__squard{
@@ -37,6 +39,8 @@ html, body{
     text-align: right;
 }
 
+/* ------------------------ CLASS FROM RESOURSE BLOCK ----------------------- */
+
 .resourse{
     padding: 10px;
     margin-left: 20px;
@@ -54,4 +58,30 @@ html, body{
 
 .resourse__link{
     color: rgb(69, 150, 216);
+}
+
+/* ------------------------- CLASS FROM DIFFICULTY LEVEL BLOCK ------------------------- */
+
+.level{
+    width: 40%;
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 20px;
+    border: 2px solid  rgb(146, 146, 146);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: rgb(146, 146, 146);
+    text-align: center;
+}
+
+.level__text{
+    color: green;
+}
+
+.level__text--middle{
+    color: yellow;
+}
+
+.level__text--advanced{
+    color: red;
 }
