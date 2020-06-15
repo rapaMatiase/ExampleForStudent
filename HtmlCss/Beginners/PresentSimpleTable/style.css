@@ -1,0 +1,109 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+/* ------------------------- CLASS FROM TABLE BLOCK ------------------------- */
+
+.table{
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+.table__title{
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+
+.table__row{
+    background-color: #F94144;
+}
+
+.table__row--primary{
+    background-color: #F3722C;
+}
+
+.table__row--secondary{
+    background-color:#F8961E;
+}
+
+.table__row--theirty{
+    background-color: #F9C74F;
+}
+
+.table__row--fourty{
+    background-color: #90BE6D;
+}
+
+.table__cell{
+    padding: 15px;
+}
+
+.table__cell--betweenRowSpan{
+    background-color: #F9C74F;
+}
+
+.table__cell--center{
+    text-align: center;
+}
+
+.table__text{
+    font-style: italic;
+}
+
+.table__text--weight{
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+/* ------------------------ CLASS FROM RESOURSE BLOCK ----------------------- */
+
+.resourse{
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+}
+
+.resourse__title{
+    margin-top: 0em;
+    font-size: 1.5rem;
+}
+
+.resourse__link{
+    color: rgb(69, 150, 216);
+}
+/* ------------------------- CLASS FROM DIFFICULTY LEVEL BLOCK ------------------------- */
+
+.level{
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 20px;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.level__text{
+    color: green;
+}
+
+.level__text--middle{
+    color: #fdb305;
+}
+
+.level__text--advanced{
+    color: red;
+}
