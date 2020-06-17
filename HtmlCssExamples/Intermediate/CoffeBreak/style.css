@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Satisfy&display=swap');
 
-body{
+html, body, main{
     padding: 0px;
     margin: 0px;
+    height: 100%;
+    width: 100%;
 }
 
 .header{
     width: 100%;
+    height: 10%;
     z-index: 100;
     background-color: #7d4e2d;
     display: flex;
@@ -84,74 +87,83 @@ body{
 
 /* PORTADA */
 
-.CoffeBreakCover{
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: cornsilk;
-    position: relative;
-}
-
-.CoffeBreakCover__ContainerCenter{
-    height: 70vh;
-    width: 90vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.CoffeBreakCover__item{
+.section{
     height: 100%;
-    width: 50%;
+}
+
+.section__article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornsilk;
+    height: 100%;
+    width: 100%;
+}
+
+.section__article--cover{
+    height: 90%;
+}
+
+.section__article--resourse{
+    background-color: #7d4e2d;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+/* ------------------------------------ X ----------------------------------- */
+
+.cover{
+    width: 80%;
+    height: 80%;
+    position: relative;
     display: flex;
     align-items: center;
+}
+
+.cover__svgCoffe{
+    height:  80%;
+    position: absolute;
+    left: 0px;
+}
+
+.cover__container{
+    display: flex;
     justify-content: center;
-}
-
-.CoffeBreakCover__item--rightCenter{
-    justify-content: flex-end;
-}
-
-.CoffeBreakCover__item--left{
-    align-items: flex-start;
-}
-
-.CoffeBreakCover__item--flexDireccionColumn{
+    align-items: center;
+    width: 70%;
     flex-direction: column;
+    height: 60%;
+    
 }
 
-.CoffeBreakCover__text{
+.cover__title{
     margin: 0px;
-    margin-bottom: 1em;
     text-align: center;
     font-size: 6em;
     color:#7d4e2d;
     width: 80%;
     font-family: 'Satisfy', cursive;
+    flex: 1 0 80%;
 }
 
-.CoffeBreakCover__svgIcon{
-    height: 100%;
+.cover__button{
+    flex: 1 0 10%;
+    width: 30%;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius:20px;
+    font-size: 1.5rem;
 }
+
 
 /* ABOUT */
 
-.Article{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: cornsilk;
-    position: relative;
-}
+
 
 .Article__Container{
-    margin:auto;
-    margin-top:100px; 
     width:80%;
 }
 
@@ -178,18 +190,9 @@ body{
 }
 
 /* RESOURSE */
-.ArticleResourse{
-    height: 100vh;
-    position: relative;
-    background-color: #7d4e2d;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
-.ArticleResourse__Title{
+
+.resourse__title{
     flex: 0 1 100%;
     text-align: center;
     font-size: 5rem;
@@ -198,7 +201,7 @@ body{
     margin: 0px;
 }
 
-.ArticleResourse__ContainerItem{
+.resourse__item{
     border : 2px solid cornsilk;
     background-color: cornsilk;
     border-radius: 25px;
